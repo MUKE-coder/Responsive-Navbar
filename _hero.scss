@@ -1,0 +1,13 @@
+.hero-section {
+  text-align: center;
+  background: linear-gradient(45deg, $color-darkblue, rgba($color-blue, 0.7)),
+    url(../bg.jpg);
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-size: center center;
+}

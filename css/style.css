@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Consolas";
+  font-size: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.big-heading {
+  font-size: 5rem;
+}
+
+.cta-link {
+  background-color: orange;
+  padding: 1.2rem 2.5rem;
+  color: #000000;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.cta-link:hover {
+  color: #000000;
+}
+
+header {
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 80px;
+  padding: 1.6rem 4.8rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header a {
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+header a:hover {
+  color: orange;
+}
+header nav {
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3.2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header nav .cta-link {
+  display: none;
+}
+@media (max-width: 768px) {
+  header nav {
+    position: fixed;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+    right: -100%;
+    -webkit-transform: scale(3);
+            transform: scale(3);
+    opacity: 0;
+    top: 80px;
+    padding: 2rem 3rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  header nav .cta-link {
+    display: block;
+  }
+}
+header nav.active {
+  right: 0;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  header .cta-link {
+    display: none;
+  }
+}
+header .logo {
+  font-size: 3.2rem;
+}
+header #humberg {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  header #humberg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+header #humberg span {
+  width: 4rem;
+  height: 1px;
+  background-color: #ffffff;
+}
+
+.hero-section {
+  text-align: center;
+  background: linear-gradient(45deg, rgb(2, 2, 88), rgba(135, 206, 235, 0.7)), url(../bg.jpg);
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-size: cover;
+  background-size: center center;
+}

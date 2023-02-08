@@ -1,0 +1,10 @@
+.cta-link {
+  background-color: $color-orange;
+  padding: 1.2rem 2.5rem;
+  color: $color-black;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  &:hover {
+    color: $color-black;
+  }
+}
